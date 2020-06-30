@@ -1,3 +1,4 @@
+#Take a snapshot of the VM
 #go to RHEV dashboard for VM and add click on ... next to migrate and click on 'Change CD' and add the RHEL ISO.
 mount the  /dev/sr0 /dvd
 yum install convert2rhel
