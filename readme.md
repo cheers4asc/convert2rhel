@@ -28,7 +28,7 @@ baseurl=file:///dvd
 rpm --import /dvd/RPM-GPG-KEY-redhat-release  
 cp /dvd/Packages/redhat-release-server-7.7-10.el7.x86_64.rpm  
 ```
-#Run conversion
+#Run conversion  
 ``` convert2rhel --disable-submgr --disablerepo "*" --enablerepo rhel  --restart -y ```
 
 ``` log ---Failed First time -----
@@ -48,7 +48,7 @@ Received return code: 1
 ```
 
 
-##### DEBUG one by one #####
+##### DEBUG Errors #####  
 GeoIP-1.5.0-14.el7.x86_64 has missing requires of geoipupdate  
 As per https://access.redhat.com/discussions/4385901 it an issue with  net-snmp-libs and net-snmp-utils  
 ``` yum -y erase net-snmp-utils; yum -y erase net-snmp-libs ```
@@ -74,11 +74,11 @@ Following line was added in yum.conf
 removing it  
 ``` yum remove -y centos-logos epel-release ```
 
-Re-run the installer and it will reboot the OS if no error .  
+### Re-run the installer and it will reboot the OS if no error .### 
 
 
-#https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite
-#https://www.redhat.com/en/blog/convert2rhel-how-update-rhel-systems-place-subscribe-rhel
+#https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite  
+#https://www.redhat.com/en/blog/convert2rhel-how-update-rhel-systems-place-subscribe-rhel  
 
 
 
