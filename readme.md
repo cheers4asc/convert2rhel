@@ -54,7 +54,7 @@ As per https://access.redhat.com/discussions/4385901 it an issue with  net-snmp-
 ``` yum -y erase net-snmp-utils; yum -y erase net-snmp-libs ```
 
 abrt-cli-2.1.11-55.el7.centos.x86_64 has missing requires of libreport-centos >= ('0', '2.1.11', '43')
-abrt-cli-2.1.11-55.el7.centos.x86_64 has missing requires of libreport-plugin-mantisbt >= ('0', '2.1.11', '43')
+abrt-cli-2.1.11-55.el7.centos.x86_64 has missing requires of libreport-plugin-mantisbt >= ('0', '2.1.11', '43')   
 Followed https://access.redhat.com/discussions/4385901
 
 ``` yum remove libreport centos-indexhtml ```
